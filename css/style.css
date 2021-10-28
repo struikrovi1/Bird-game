@@ -1,0 +1,67 @@
+body {
+  background-color: #accfe3;
+}
+body .bird {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 0.2s ease-in-out;
+  width: 300px;
+  z-index: 10;
+}
+body .bird img {
+  width: 100%;
+}
+body .bird.bird-active {
+  transform: rotateY(-180deg);
+}
+body .bird .bird-egg {
+  width: 30px;
+  position: absolute;
+  left: 120px;
+  bottom: 24px;
+  z-index: 10;
+}
+body .bird-basket {
+  width: 220px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transition: left 0.4s ease-in-out;
+}
+body .bird-basket img {
+  width: 100%;
+}
+body .bird-basket .bird-egg {
+  width: 30px;
+  position: absolute;
+  left: 63%;
+  transform: translateX(-50%);
+  top: -14px;
+  height: 50px;
+}
+@-webkit-keyframes birdAni {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -70vh;
+  }
+}
+@keyframes birdAni {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -70vh;
+  }
+}
+body p {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.692);
+  border: 5px solid #141449;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */
